@@ -2,7 +2,7 @@
 
 Static website (Cloudflare Pages friendly): plain HTML + CSS + a tiny bit of vanilla JS.
 
-## Quick edits
+## Quick edits done
 
 - **Site-wide content**: `site-config.js` (brand name, banner, first event, menu text, contact links, hero images)
 - **Look & feel**: `styles.css`
