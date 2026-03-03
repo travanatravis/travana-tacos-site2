@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Find Us • Travana Tacos</title>
+    <meta name="description" content="Find Travana Tacos — current location and hours (when live), plus first event details." />
+    <meta name="theme-color" content="#0b0b12" />
+
+    <link rel="canonical" href="https://www.travanatacos.com/find-us.html" />
+    <link rel="icon" href="/images/TravanaLogo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/images/TravanaLogo.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="/">
+          <img id="brandLogo" class="brand-logo" src="/images/TravanaLogo.png" alt="Travana Tacos logo" />
+          <span class="brand-text">
+            <span class="brand-name" id="brandName">Travana Tacos</span>
+            <span class="brand-sub" id="brandSub">Rochester, NY</span>
+          </span>
+        </a>
+
+        <div class="nav-wrap">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="primaryNav" aria-expanded="false">
+            <span></span>
+          </button>
+          <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/find-us.html" aria-current="page">Find Us</a>
+            <a class="nav-cta" href="/contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section id="banner" class="notice reveal" style="display:none;">
+        <strong id="banner1">Travana Tacos is not currently in operation.</strong>
+        <span id="banner2">First event: Rochester Lilac Festival (May 8–17, 2026). Serving Fri–Sun all day.</span>
+      </section>
+
+      <section class="card reveal">
+        <div class="kicker"><span class="k-dot"></span>Find us</div>
+        <h1 style="margin-top: 14px;">Where are you today?</h1>
+        <p class="muted" style="max-width: 85ch;">
+          When we’re actively serving, this page becomes the quick “where are they right now?” link.
+          We’ll post our exact spot and hours here and on Instagram.
+        </p>
+
+        <div class="grid2" style="margin-top: 16px;">
+          <div>
+            <div class="eventbox">
+              <div class="event-title">
+                <strong id="statusLabel">Status:</strong>
+                <span id="spot">Not currently in operation</span>
+              </div>
+              <div class="event-meta">
+                <div>Hours: <strong id="hours">See first event details below</strong></div>
+                <div class="buttons" style="margin-top: 10px;">
+                  <a class="btn" id="navlink" href="https://www.google.com/maps/search/?api=1&query=Highland+Park+Rochester+NY" target="_blank" rel="noopener">Open in Maps</a>
+                  <a class="btn secondary" href="/menu.html">Menu</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>How to use this page</h2>
+            <div class="timeline">
+              <div class="titem">
+                <div class="when">Before events</div>
+                <div class="what">Scroll down for the next event details.</div>
+              </div>
+              <div class="titem">
+                <div class="when">During events</div>
+                <div class="what">Tap “Open in Maps” for the fastest route to our spot.</div>
+              </div>
+              <div class="titem">
+                <div class="when">Later</div>
+                <div class="what">We’ll add a live location tracker once we’re running weekly.</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="map">
+              <iframe id="mapEmbed" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="muted" style="margin-top: 10px;">Map updates automatically when we flip to “in operation.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card reveal">
+        <h2>Next event: <span id="eventName">Rochester Lilac Festival</span></h2>
+
+        <p class="muted">
+          <strong>Dates:</strong> <span id="eventDates">May 8–17, 2026</span><br />
+          <strong>Where:</strong> <span id="eventWhere">Highland Park — 1440 South Ave, Rochester, NY 14620</span><br />
+          <strong>Serving:</strong> <span id="eventSchedule">Fri–Sun (all day) during the festival</span><br />
+          <strong>Admission:</strong> <span id="eventAdmission">Free admission (some activities may require tickets).</span>
+        </p>
+
+        <div class="buttons" style="margin-top: 12px;">
+          <a class="btn secondary" id="eventLink" href="https://roclilacfest.com/" target="_blank" rel="noopener">Festival website</a>
+          <a class="btn secondary" id="eventMaps" href="https://www.google.com/maps/search/?api=1&query=Highland+Park+1440+South+Ave+Rochester+NY+14620" target="_blank" rel="noopener">Open festival location</a>
+        </div>
+
+        <details style="margin-top: 12px;">
+          <summary>More festival details</summary>
+          <p class="muted" style="margin: 10px 0 0;">
+            <strong>Highlights:</strong> <span id="eventHighlights">Over 1,200 lilac bushes, the Lilac Parade, Lilac 5K/10K, and 10 days of free concerts.</span><br /><br />
+            <strong>Music:</strong> <span id="eventMusic">Over 80 bands perform at the KeyBank Center Stage.</span><br /><br />
+            <strong>Parking &amp; Transit:</strong> <span id="eventParking">Parking is available with shuttles from remote lots.</span>
+          </p>
+        </details>
+      </section>
+
+      <section class="card reveal">
+        <h2>Follow updates</h2>
+        <p class="muted">We’ll post “we’re live” updates and last-minute changes on Instagram.</p>
+        <div class="buttons">
+          <a class="btn secondary" id="igBtn" href="https://instagram.com/TravanaTacos" target="_blank" rel="noopener">Instagram @TravanaTacos</a>
+          <a class="btn secondary" id="emailBtn" href="mailto:travis.woods@travanatacos.com">travis.woods@travanatacos.com</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <img src="/images/TravanaLogo.png" alt="Travana Tacos" style="width:36px; height:36px; border-radius: 12px; border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03);" />
+              <div>
+                <div style="font-weight:900;">© <span id="y"></span> <span id="brandName2">Travana Tacos</span></div>
+                <div class="mini">Bookmark this page — it’s our live “where are we?” link.</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a class="btn secondary" href="/menu.html">Menu</a>
+            <a class="btn secondary" href="/about.html">About</a>
+            <a class="btn secondary" href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/site-config.js" defer></script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
