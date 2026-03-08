@@ -53,38 +53,35 @@
         <span id="banner2">First event: Rochester Lilac Festival (May 8–17, 2026). Serving Fri–Sun all day.</span>
       </section>
 
-      <section class="card hero-prime reveal">
+      <section class="card card-dark surface-glow reveal">
         <div class="section-top">
           <div>
-            <div class="kicker"><span class="k-dot"></span>Find us</div>
+            <div class="kicker"><span class="k-dot"></span>Live location page</div>
             <h1 style="margin-top: 14px;">Where are you today?</h1>
-            <p class="lead">This page is designed to become the fast answer when you’re live. During events, people can land here, tap one button, and head straight to your location.</p>
+            <p class="lead">This page should feel like the fast answer people tap from Instagram, group chats, and last-minute festival plans.</p>
           </div>
-          <aside class="mini-quote">Think of this page as the live-location shortcut you drop on Instagram stories and in bio links.</aside>
+          <aside class="mini-quote">Built to become the one link your customers remember when they want the quickest route to the stand.</aside>
         </div>
 
-        <div class="grid2" style="margin-top: 18px;">
-          <div>
-            <div class="eventbox">
-              <div class="event-title">Current status</div>
-              <div class="display-sm" style="margin-top: 10px;"><strong id="statusLabel">Status:</strong> <span id="spot">Not currently in operation</span></div>
-              <p class="muted" style="margin-top: 10px;">Hours: <strong id="hours">See first event details below</strong></p>
-              <div class="buttons" style="margin-top: 12px;">
-                <a class="btn" id="navlink" href="https://www.google.com/maps/search/?api=1&query=Highland+Park+Rochester+NY" target="_blank" rel="noopener">Open in Maps</a>
-                <a class="btn secondary" href="/menu.html">View Menu</a>
-              </div>
+        <div class="status-hero">
+          <div class="status-panel">
+            <div class="status-badge">Current status</div>
+            <div class="display-sm"><span id="spot">Not currently in operation</span></div>
+            <p class="muted" style="margin-top: 10px;">Hours: <strong id="hours">See first event details below</strong></p>
+            <div class="buttons" style="margin-top: 14px;">
+              <a class="btn" id="navlink" href="https://www.google.com/maps/search/?api=1&query=Highland+Park+Rochester+NY" target="_blank" rel="noopener">Open in Maps</a>
+              <a class="btn secondary" href="/menu.html">View Menu</a>
             </div>
-
-            <div class="featuregrid" style="grid-template-columns: 1fr; margin-top: 14px;">
-              <div class="feature">
-                <div class="iconbadge" aria-hidden="true">📍</div>
-                <h3>Before events</h3>
-                <p>Use the festival card below for the next scheduled appearance.</p>
+            <div class="status-grid" style="margin-top: 18px;">
+              <div class="status-tile">
+                <div class="overline">Best use</div>
+                <strong>Same-day answer</strong>
+                <p>Share this page in stories and bio links when people ask where you are.</p>
               </div>
-              <div class="feature">
-                <div class="iconbadge" aria-hidden="true">🚗</div>
-                <h3>During events</h3>
-                <p>Tap the map button and you’ll go straight to the best address we have posted.</p>
+              <div class="status-tile">
+                <div class="overline">When live</div>
+                <strong>Tap and drive</strong>
+                <p>The map button becomes the fastest path from discovery to arrival.</p>
               </div>
             </div>
           </div>
@@ -93,25 +90,52 @@
             <div class="map">
               <iframe id="mapEmbed" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <p class="muted" style="margin-top: 10px;">Map updates automatically when you flip the site into “in operation.”</p>
+            <div class="quick-meta" style="margin-top: 14px;">
+              <div class="meta-tile">
+                <div class="overline">Before events</div>
+                <strong>Next appearance</strong>
+                <p>Use the festival card below until you’re actively serving.</p>
+              </div>
+              <div class="meta-tile">
+                <div class="overline">During events</div>
+                <strong>Live updates</strong>
+                <p>Flip the site live and this page becomes your location shortcut.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="card reveal">
-        <div class="kicker"><span class="k-dot"></span>Next event</div>
+      <section class="card card-sunset reveal">
+        <div class="kicker"><span class="k-dot"></span>Next scheduled appearance</div>
         <h2 style="margin-top: 12px;"><span id="eventName">Rochester Lilac Festival</span></h2>
-        <p class="muted" style="margin-top: 8px;">
-          <strong>Dates:</strong> <span id="eventDates">May 8–17, 2026</span><br />
-          <strong>Where:</strong> <span id="eventWhere">Highland Park — 1440 South Ave, Rochester, NY 14620</span><br />
-          <strong>Serving:</strong> <span id="eventSchedule">Fri–Sun (all day) during the festival</span><br />
-          <strong>Admission:</strong> <span id="eventAdmission">Free admission (some activities may require tickets).</span>
-        </p>
-        <div class="buttons">
+        <div class="booking-grid" style="margin-top: 18px;">
+          <div class="booking-card">
+            <div class="overline">Dates</div>
+            <strong id="eventDates">May 8–17, 2026</strong>
+            <p>Festival service window for the first launch run.</p>
+          </div>
+          <div class="booking-card">
+            <div class="overline">Where</div>
+            <strong id="eventWhere">Highland Park — 1440 South Ave, Rochester, NY 14620</strong>
+            <p>Bookmark the area now so finding the stand later feels easy.</p>
+          </div>
+          <div class="booking-card">
+            <div class="overline">Serving</div>
+            <strong id="eventSchedule">Fri–Sun (all day) during the festival</strong>
+            <p>Built around the higher-energy event days.</p>
+          </div>
+          <div class="booking-card">
+            <div class="overline">Admission</div>
+            <strong id="eventAdmission">Free admission (some activities may require tickets).</strong>
+            <p>Easy for groups to stop by without extra friction.</p>
+          </div>
+        </div>
+        <div class="dual-cta" style="margin-top: 18px;">
           <a class="btn secondary" id="eventLink" href="https://roclilacfest.com/" target="_blank" rel="noopener">Festival website</a>
           <a class="btn secondary" id="eventMaps" href="https://www.google.com/maps/search/?api=1&query=Highland+Park+1440+South+Ave+Rochester+NY+14620" target="_blank" rel="noopener">Open festival location</a>
         </div>
-        <details style="margin-top: 14px;">
+        <details style="margin-top: 16px;">
           <summary>More festival details</summary>
           <p class="muted">
             <strong>Highlights:</strong> <span id="eventHighlights">Over 1,200 lilac bushes, the Lilac Parade, Lilac 5K/10K, and 10 days of free concerts.</span><br /><br />
@@ -121,26 +145,31 @@
         </details>
       </section>
 
-      <section class="card card-dark reveal">
-        <div class="kicker"><span class="k-dot"></span>Follow updates</div>
-        <h2 style="margin-top: 12px;">Catch the live drop fast</h2>
-        <div class="signal-grid">
-          <div class="mini-card">
+      <section class="card reveal">
+        <div class="kicker"><span class="k-dot"></span>Stay synced</div>
+        <h2 style="margin-top: 12px;">How customers should follow the drop</h2>
+        <div class="contact-trust" style="margin-top: 18px;">
+          <div class="trust-card">
             <div class="iconbadge" aria-hidden="true">📱</div>
-            <h3>Instagram</h3>
-            <p>Best for last-minute “we’re live” updates and same-day changes.</p>
+            <h3>Instagram first</h3>
+            <p>Best for same-day updates, “we’re live,” and booth changes during an event.</p>
             <div class="buttons"><a class="btn secondary" id="igBtn" href="https://instagram.com/TravanaTacos" target="_blank" rel="noopener">@TravanaTacos</a></div>
           </div>
-          <div class="mini-card">
+          <div class="trust-card">
             <div class="iconbadge" aria-hidden="true">✉️</div>
-            <h3>Email</h3>
-            <p>Best for questions, event planning, and anything that needs details.</p>
+            <h3>Email for details</h3>
+            <p>Best for event planning, questions, and anything that needs more than a quick DM.</p>
             <div class="buttons"><a class="btn secondary" id="emailBtn" href="mailto:travis.woods@travanatacos.com">travis.woods@travanatacos.com</a></div>
           </div>
-          <div class="mini-card">
-            <div class="iconbadge" aria-hidden="true">⭐</div>
+          <div class="trust-card">
+            <div class="iconbadge" aria-hidden="true">🔖</div>
             <h3>Bookmark this page</h3>
-            <p>It’s the quickest “where are they?” link for fans once events start stacking up.</p>
+            <p>Once events stack up, this becomes the cleanest “where are they?” link on the site.</p>
+          </div>
+          <div class="trust-card">
+            <div class="iconbadge" aria-hidden="true">🗺️</div>
+            <h3>Tap, don’t think</h3>
+            <p>The goal is zero friction from curiosity to directions.</p>
           </div>
         </div>
       </section>
