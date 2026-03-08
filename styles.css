@@ -1539,3 +1539,64 @@ h1, h2, h3, .display-sm, .brand-name, .stat .k, .event-meta strong, strong { col
     background: rgba(27, 11, 15, 0.95);
   }
 }
+
+/* Smoky ember balance pass */
+:root {
+  --site-shell-0: #1b1214;
+  --site-shell-1: #271518;
+  --site-shell-2: #35181a;
+  --site-shell-3: #231519;
+  --site-shell-4: #191216;
+}
+
+body {
+  background:
+    radial-gradient(74rem 44rem at -10% -14%, rgba(255, 113, 44, 0.24), transparent 54%),
+    radial-gradient(40rem 24rem at 104% -6%, rgba(18, 214, 207, 0.14), transparent 54%),
+    radial-gradient(34rem 22rem at 82% 18%, rgba(255, 31, 114, 0.13), transparent 56%),
+    radial-gradient(42rem 28rem at 52% 112%, rgba(255, 178, 0, 0.11), transparent 62%),
+    linear-gradient(180deg, var(--site-shell-0) 0%, var(--site-shell-1) 22%, var(--site-shell-2) 50%, var(--site-shell-3) 76%, var(--site-shell-4) 100%);
+}
+
+body::before {
+  background:
+    radial-gradient(30rem 30rem at var(--mx) var(--my), rgba(255, 220, 188, 0.06), transparent 58%),
+    radial-gradient(36rem 36rem at calc(var(--mx) - 24vw) calc(var(--my) + 18vh), rgba(255, 140, 46, 0.14), transparent 60%),
+    radial-gradient(32rem 32rem at calc(var(--mx) + 21vw) calc(var(--my) - 10vh), rgba(18, 214, 207, 0.1), transparent 60%),
+    radial-gradient(38rem 38rem at calc(var(--mx) + 8vw) calc(var(--my) + 28vh), rgba(255, 31, 114, 0.1), transparent 63%),
+    radial-gradient(24rem 24rem at calc(var(--mx) - 10vw) calc(var(--my) - 14vh), rgba(255, 178, 0, 0.08), transparent 60%);
+}
+
+body::after {
+  opacity: 0.06;
+  mix-blend-mode: soft-light;
+}
+
+.topbar {
+  background: linear-gradient(180deg, rgba(27, 16, 20, 0.78), rgba(34, 18, 22, 0.66));
+}
+
+.topbar.is-scrolled {
+  background: linear-gradient(180deg, rgba(26, 14, 19, 0.9), rgba(35, 16, 22, 0.82));
+}
+
+.page-home .footer,
+.page-about .footer,
+.page-menu .footer,
+.page-find .footer,
+.page-contact .footer {
+  background:
+    radial-gradient(24rem 13rem at 0% 0%, rgba(255, 178, 0, 0.14), transparent 60%),
+    radial-gradient(18rem 11rem at 100% 10%, rgba(18, 214, 207, 0.08), transparent 56%),
+    linear-gradient(145deg, rgba(30, 14, 18, 0.88), rgba(42, 17, 22, 0.82));
+}
+
+.toTop {
+  background: linear-gradient(180deg, rgba(42, 17, 21, 0.9), rgba(29, 13, 17, 0.84));
+}
+
+@media (max-width: 760px) {
+  .nav {
+    background: rgba(31, 14, 19, 0.95);
+  }
+}
