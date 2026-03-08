@@ -6,7 +6,7 @@
 
     <title>Contact • Travana Tacos</title>
     <meta name="description" content="Contact Travana Tacos — event inquiries and questions." />
-    <meta name="theme-color" content="#0b0b12" />
+    <meta name="theme-color" content="#fff5ed" />
 
     <link rel="canonical" href="https://www.travanatacos.com/contact.html" />
     <link rel="icon" href="/images/TravanaLogo.png" type="image/png" />
@@ -22,7 +22,6 @@
 
   <body>
     <a class="skip" href="#main">Skip to content</a>
-
     <header class="topbar">
       <div class="wrap topbar-inner">
         <a class="brand" href="/">
@@ -38,10 +37,10 @@
             <span></span>
           </button>
           <nav class="nav" id="primaryNav" aria-label="Primary navigation">
-            <a href="/">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/menu.html">Menu</a>
-            <a href="/find-us.html">Find Us</a>
+            <a href="/" >Home</a>
+            <a href="/about.html" >About</a>
+            <a href="/menu.html" >Menu</a>
+            <a href="/find-us.html" >Find Us</a>
             <a class="nav-cta" href="/contact.html" aria-current="page">Contact</a>
           </nav>
         </div>
@@ -58,9 +57,9 @@
         <section class="card reveal">
           <div class="kicker"><span class="k-dot"></span>Contact</div>
           <h1 style="margin-top: 14px;">Let’s talk tacos.</h1>
-          <p class="muted">For event inquiries, partnerships, or general questions — reach out anytime.</p>
+          <p class="lead">For event inquiries, partnerships, or general questions — reach out anytime. The contact flow is built to feel smooth, polished, and easy to answer quickly.</p>
 
-          <ul class="contactlist" style="margin-top: 14px;">
+          <ul class="contactlist" style="margin-top: 16px;">
             <li>
               <span class="label">Email</span>
               <span>
@@ -85,10 +84,8 @@
           </div>
 
           <div class="divider"></div>
-
           <h2>Quick inquiry template</h2>
-          <p class="muted">Copy/paste this into an email and fill in the blanks:</p>
-
+          <p class="muted" style="margin-top: 8px;">Copy and paste this if you want a polished starting point:</p>
           <pre class="emailtemplate" id="templateText">Subject: Travana Tacos Inquiry — [Event Name / Date]
 
 Hi Travana Tacos,
@@ -101,7 +98,6 @@ Best way to reach me: [phone/email]
 
 Thanks!
 [Name]</pre>
-
           <div class="buttons">
             <button class="btn secondary" type="button" data-copy="templateText">Copy template</button>
             <a class="btn secondary" href="mailto:travis.woods@travanatacos.com?subject=Travana%20Tacos%20Inquiry">Open email</a>
@@ -109,8 +105,9 @@ Thanks!
         </section>
 
         <section class="card reveal">
-          <h2>Send a quick message</h2>
-          <p class="muted" style="margin-top: 6px;">This opens your email app with everything filled in (no forms backend required).</p>
+          <div class="kicker"><span class="k-dot"></span>Fast message</div>
+          <h2 style="margin-top: 12px;">Generate an email in one step</h2>
+          <p class="muted" style="margin-top: 8px;">No backend needed — this simply opens the user’s email app with the details already filled in.</p>
 
           <form class="form" id="mailtoForm">
             <div class="field">
@@ -153,24 +150,47 @@ Thanks!
               <button class="btn" type="submit">Generate email</button>
               <a class="btn secondary" id="emailLink2" href="mailto:travis.woods@travanatacos.com">Or just email us</a>
             </div>
-
-            <p class="mini" style="margin: 0;">Prefer Instagram? DM us and we’ll respond as soon as we can.</p>
-            <div class="buttons" style="margin-top: 10px;">
+            <div class="buttons" style="margin-top: 8px;">
               <a class="btn ghost" id="igLink2" href="https://instagram.com/TravanaTacos" target="_blank" rel="noopener">DM us on Instagram</a>
             </div>
           </form>
         </section>
       </section>
 
+      <section class="card reveal">
+        <div class="kicker"><span class="k-dot"></span>Booking notes</div>
+        <h2 style="margin-top: 12px;">What helps us answer faster</h2>
+        <div class="microgrid">
+          <div class="mini-card">
+            <div class="iconbadge" aria-hidden="true">📅</div>
+            <h3>Date + timing</h3>
+            <p>Include the event date, serving window, and any setup constraints right away.</p>
+          </div>
+          <div class="mini-card">
+            <div class="iconbadge" aria-hidden="true">👥</div>
+            <h3>Guest count</h3>
+            <p>An estimate makes it easier to suggest the right setup and pace.</p>
+          </div>
+          <div class="mini-card">
+            <div class="iconbadge" aria-hidden="true">⚡</div>
+            <h3>Power / space</h3>
+            <p>Even rough notes about booth space and power access can save time later.</p>
+          </div>
+          <div class="mini-card">
+            <div class="iconbadge" aria-hidden="true">📍</div>
+            <h3>Location</h3>
+            <p>Tell us where the event is happening so logistics are easier to picture instantly.</p>
+          </div>
+        </div>
+      </section>
+
       <footer class="footer">
         <div class="footer-inner">
-          <div>
-            <div style="display:flex; align-items:center; gap:10px;">
-              <img src="/images/TravanaLogo.png" alt="Travana Tacos" style="width:36px; height:36px; border-radius: 12px; border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03);" />
-              <div>
-                <div style="font-weight:900;">© <span id="y"></span> <span id="brandName2">Travana Tacos</span></div>
-                <div class="mini">Questions, events, collabs — hit us up.</div>
-              </div>
+          <div class="footer-brand">
+            <img src="/images/TravanaLogo.png" alt="Travana Tacos" class="footer-logo" />
+            <div>
+              <div class="footer-title">© <span id="y"></span> <span id="brandName2">Travana Tacos</span></div>
+              <div class="mini">Questions, events, collabs — hit us up.</div>
             </div>
           </div>
           <div class="footer-links">

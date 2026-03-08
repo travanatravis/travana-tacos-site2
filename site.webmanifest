@@ -3,8 +3,8 @@
   "short_name": "Travana",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b0b12",
-  "theme_color": "#0b0b12",
+  "background_color": "#fff5ed",
+  "theme_color": "#fff5ed",
   "icons": [
     {
       "src": "/images/TravanaLogo.png",

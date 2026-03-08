@@ -266,7 +266,7 @@
     btn.setAttribute("aria-label", "Back to top");
     btn.innerHTML = `
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8L6.4 13.4 5 12l7-7z" fill="rgba(255,255,255,0.9)"/>
+        <path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8L6.4 13.4 5 12l7-7z" fill="currentColor"/>
       </svg>
     `;
 
