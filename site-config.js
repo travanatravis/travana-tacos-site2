@@ -81,9 +81,8 @@ window.SITE = {
   // Images. Replace with real photos as you upload them to /images.
   images: {
     hero1: "/images/BrandedTacos.png",
-    hero2: "https://placehold.co/1200x800/png?text=Add+a+real+taco+photo+here",
+    hero2: "/images/BrandedTacos.png",
     about1: "/images/BrandedTacos.png",
-    about2:
-      "https://placehold.co/1200x800/png?text=Add+a+behind-the-scenes+photo"
+    about2: "/images/BrandedTacos.png"
   }
 };

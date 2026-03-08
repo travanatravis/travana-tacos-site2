@@ -286,6 +286,27 @@
 
   mkToTop();
 
+
+  // Scroll polish: progress line + header state
+  const topbar = document.querySelector(".topbar");
+  const progress = document.createElement("div");
+  progress.className = "scroll-progress";
+  document.body.appendChild(progress);
+
+  const onScrollPolish = () => {
+    const scrolled = window.scrollY > 20;
+    if (topbar) topbar.classList.toggle("is-scrolled", scrolled);
+
+    const doc = document.documentElement;
+    const max = Math.max(1, doc.scrollHeight - window.innerHeight);
+    const pct = Math.min(1, Math.max(0, window.scrollY / max));
+    progress.style.transform = `scaleX(${pct})`;
+  };
+
+  window.addEventListener("scroll", onScrollPolish, { passive: true });
+  window.addEventListener("resize", onScrollPolish, { passive: true });
+  onScrollPolish();
+
   // Mailto form (Contact page)
   const form = $("mailtoForm");
   if (form && contact.email) {
