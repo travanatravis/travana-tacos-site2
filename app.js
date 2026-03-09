@@ -307,6 +307,18 @@
   window.addEventListener("resize", onScrollPolish, { passive: true });
   onScrollPolish();
 
+  const floatingMenuCta = document.querySelector(".floating-menu-cta");
+  const heroPrime = document.querySelector(".hero-cinematic, .hero-prime, .hero");
+  const onFloatingCta = () => {
+    if (!floatingMenuCta || !heroPrime) return;
+    const rect = heroPrime.getBoundingClientRect();
+    const show = rect.bottom < 120;
+    floatingMenuCta.classList.toggle("show", show);
+  };
+  window.addEventListener("scroll", onFloatingCta, { passive: true });
+  window.addEventListener("resize", onFloatingCta, { passive: true });
+  onFloatingCta();
+
   // Mailto form (Contact page)
   const form = $("mailtoForm");
   if (form && contact.email) {

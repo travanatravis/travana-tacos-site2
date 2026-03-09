@@ -33,7 +33,9 @@
     <header class="topbar">
       <div class="wrap topbar-inner">
         <a class="brand" href="/">
-          <img id="brandLogo" class="brand-logo" src="/images/TravanaLogo.png" alt="Travana Tacos logo" />
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" focusable="false"><path d="M12 38c6-15 18-23 36-23 2 0 4 0 6 .2-2 18-10 31-24 39-8-4-14-9-18-16Z" fill="currentColor" opacity=".22"/><path d="M10 36c5-14 17-22 36-22 3 0 5 .1 8 .4-2.7 18.6-11.6 31.7-27 39.6C18 49.7 12.4 43.8 10 36Z" fill="currentColor"/><path d="M20 36c2.6 0 3.6 1.6 3.6 3.3S22.6 43 20 43s-3.7-1.7-3.7-3.7S17.4 36 20 36Zm10-4c2.6 0 3.6 1.6 3.6 3.3S32.6 39 30 39s-3.7-1.7-3.7-3.7S27.4 32 30 32Zm11 3c2.5 0 3.5 1.5 3.5 3.1S43.5 41 41 41s-3.6-1.5-3.6-2.9S38.5 35 41 35Z" fill="#FFD88E"/></svg>
+          </span>
           <span class="brand-text">
             <span class="brand-name" id="brandName">Travana Tacos</span>
             <span class="brand-sub" id="brandSub">Rochester, NY</span>
@@ -48,20 +50,20 @@
             <a href="/" aria-current="page">Home</a>
             <a href="/about.html" >About</a>
             <a href="/menu.html" >Menu</a>
-            <a href="/find-us.html" >Find Us</a>
+            <a class="nav-find" href="/find-us.html" >Find Us</a>
             <a class="nav-cta" href="/contact.html" >Contact</a>
           </nav>
         </div>
       </div>
     </header>
 
-    <main id="main" class="wrap">
+    <main id="main" class="site-main">
       <section id="banner" class="notice reveal" style="display:none;">
         <strong id="banner1">Travana Tacos is not currently in operation.</strong>
         <span id="banner2">First event: Rochester Lilac Festival (May 8–17, 2026). Serving Fri–Sun all day.</span>
       </section>
 
-      <section class="card hero hero-prime reveal">
+      <section class="hero-cinematic reveal">
         <div class="hero-inner">
           <div class="hero-copy">
             <div class="kicker"><span class="k-dot"></span><span id="pillCity">Rochester, NY pop-up</span></div>
@@ -76,14 +78,14 @@
               <span id="todayHours">Next service: Lilac Festival (Fri–Sun)</span>
             </p>
 
-            <div class="buttons">
-              <a class="btn" href="/find-us.html">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6a2.5 2.5 0 0 0 0 5.5z"/></svg>
-                Find Us
-              </a>
-              <a class="btn secondary" href="/menu.html">
+            <div class="buttons hero-actions">
+              <a class="btn" href="/menu.html">
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h2v18H7V3zm8 0h2v18h-2V3zM3 7h2v14H3V7zm16 0h2v14h-2V7z"/></svg>
                 View Menu
+              </a>
+              <a class="btn secondary" href="/find-us.html">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6a2.5 2.5 0 0 0 0 5.5z"/></svg>
+                Next Event
               </a>
               <a class="btn ghost" id="mapsBtn" href="https://www.google.com/maps/search/?api=1&query=Highland+Park+Rochester+NY" target="_blank" rel="noopener">Open in Maps</a>
             </div>
@@ -94,6 +96,9 @@
               <span class="pill">🥣 Dip included</span>
               <span class="pill" id="pillCashless">💳 Card only (no cash)</span>
             </div>
+
+                        <div class="micro-trust">Rochester’s favorite festival taco energy starts here.</div>
+            <div class="card-only-badge">Card Only</div>
 
             <p class="hero-note">Travana is designed to feel like the kind of food booth people photograph before they even order — clean branding, craveable visuals, and one signature item dialed in for repeat lines.</p><div class="hero-taste"><div><div class="taste-label">Texture</div><div class="taste-value">Crispy edges</div></div><div><div class="taste-label">Flavor</div><div class="taste-value">Rich consomé</div></div><div><div class="taste-label">Experience</div><div class="taste-value">Fast, festival-ready</div></div></div><div class="stats">
               <div class="stat">
@@ -130,6 +135,18 @@
               </div>
             </div>
           </div>
+          <div class="scroll-cue" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-cue-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="status-ribbon reveal">
+        <div class="wrap status-ribbon-inner">
+          <strong>Not currently in operation</strong>
+          <span>First event: Rochester Lilac Festival <em>May 8–17, 2026</em> • Serving Fri–Sun all day</span>
+          <span class="status-chip">Card only</span>
         </div>
       </section>
 
@@ -269,19 +286,34 @@
         </div>
       </section>
 
-      <footer class="footer">
-        <div class="footer-inner">
-          <div class="footer-brand">
-            <img src="/images/TravanaLogo.png" alt="Travana Tacos" class="footer-logo" />
-            <div>
-              <div class="footer-title">© <span id="y"></span> <span id="brandName2">Travana Tacos</span></div>
-              <div class="mini">One taco. Done right. Built for speed.</div>
-            </div>
+      
+      <section class="social-proof-strip reveal">
+        <div class="wrap social-proof-inner">
+          <div class="social-proof-copy">
+            <div class="kicker"><span class="k-dot"></span>Festival energy</div>
+            <h2 style="margin-top:12px;">Built to look as good in a story post as it does in your hands.</h2>
+            <p class="muted" style="margin-top:10px; max-width:58ch;">Travana is aiming for that sweet spot where the booth feels polished, the line moves fast, and the tacos look like they were made to be photographed before the first dip.</p>
           </div>
-          <div class="footer-links">
-            <a class="btn secondary" href="/menu.html">Menu</a>
-            <a class="btn secondary" href="/find-us.html">Find Us</a>
-            <a class="btn secondary" href="/contact.html">Contact</a>
+          <div class="social-proof-photo">
+            <img src="/images/BrandedTacos.png" alt="Travana Tacos festival-ready taco box with rich consomé and branded presentation" loading="lazy" />
+            <div class="stack-badge">Social-proof ready • Rochester pop-up</div>
+          </div>
+        </div>
+      </section>
+
+      <a class="floating-menu-cta" href="/menu.html">View Menu</a>
+<footer class="footer footer-rich">
+        <div class="footer-inner">
+          <div class="footer-center">
+            <img src="/images/TravanaLogo.png" alt="Travana Tacos" class="footer-logo" />
+            <div class="footer-title">© <span id="y"></span> <span id="brandName2">Travana Tacos</span></div>
+            <div class="mini">Rochester pride. Festival energy. One taco done right.</div>
+            <div class="footer-socials">
+              <a href="https://instagram.com/TravanaTacos" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+              <a href="mailto:travis.woods@travanatacos.com">Email</a>
+              <a href="/find-us.html">Find Us</a>
+            </div>
+            <div class="footer-news">Newsletter-style updates coming later — for now, follow Instagram for locations, drops, and sellout photos.</div>
           </div>
         </div>
       </footer>
