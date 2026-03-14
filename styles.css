@@ -1591,3 +1591,157 @@ p, li { text-wrap: pretty; }
   .page-masthead { border-radius: 26px; }
   .page-masthead .section-top { gap: 18px; }
 }
+
+/* --- 2026 theme integrity fix --- */
+:root { --ink: var(--text); }
+
+.btn.secondary,
+.btn.ghost {
+  background: #fff8f2;
+  color: #40211a;
+  border: 1px solid rgba(123, 66, 44, 0.12);
+  box-shadow: 0 10px 22px rgba(82, 44, 28, 0.08);
+}
+.btn.secondary:hover,
+.btn.ghost:hover {
+  background: #fffdf9;
+  box-shadow: 0 14px 28px rgba(82, 44, 28, 0.12);
+}
+
+.hero-cinematic .btn.secondary,
+.hero-cinematic .btn.ghost,
+.card-dark .btn.secondary,
+.card-dark .btn.ghost,
+.page-menu .page-masthead .btn.secondary,
+.page-menu .page-masthead .btn.ghost,
+.page-find .page-masthead .btn.secondary,
+.page-find .page-masthead .btn.ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff5ea;
+  border: 1px solid rgba(255, 229, 204, 0.16);
+  box-shadow: none;
+}
+.hero-cinematic .btn.secondary:hover,
+.hero-cinematic .btn.ghost:hover,
+.card-dark .btn.secondary:hover,
+.card-dark .btn.ghost:hover,
+.page-menu .page-masthead .btn.secondary:hover,
+.page-menu .page-masthead .btn.ghost:hover,
+.page-find .page-masthead .btn.secondary:hover,
+.page-find .page-masthead .btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.card:not(.card-dark):not(.card-sunset):not(.hero):not(.hero-cinematic) {
+  background: linear-gradient(180deg, rgba(255, 250, 245, 0.94), rgba(255, 241, 231, 0.9));
+  border-color: rgba(124, 69, 47, 0.1);
+  box-shadow: 0 22px 56px rgba(72, 28, 14, 0.1);
+}
+
+.card-dark {
+  color: #fff1e5;
+  background:
+    radial-gradient(44rem 24rem at 100% 0%, rgba(255, 127, 58, 0.14), transparent 54%),
+    linear-gradient(160deg, var(--surface-dark) 0%, var(--surface-dark-2) 60%, #180c0a 100%);
+  border-color: rgba(255, 185, 120, 0.12);
+  box-shadow: 0 28px 72px rgba(35, 12, 8, 0.32);
+}
+.card-dark::before {
+  background:
+    radial-gradient(24rem 18rem at 0% 0%, rgba(255, 208, 94, 0.1), transparent 50%),
+    radial-gradient(30rem 20rem at 100% 0%, rgba(201, 59, 32, 0.12), transparent 54%);
+}
+.card-dark h1,
+.card-dark h2,
+.card-dark h3,
+.card-dark .display-sm,
+.card-dark .muted strong,
+.card-dark .stat .k,
+.card-dark .event-meta strong,
+.card-dark .footer-title,
+.card-dark strong {
+  color: #fff3e7;
+}
+.card-dark .muted,
+.card-dark p,
+.card-dark li,
+.card-dark .what,
+.card-dark .quote-line,
+.card-dark .event-meta,
+.card-dark .mini,
+.card-dark .v,
+.card-dark .overline,
+.card-dark .label,
+.card-dark .when {
+  color: rgba(255, 239, 224, 0.82);
+}
+.card-dark .kicker,
+.card-dark .pill,
+.card-dark .chip,
+.card-dark .mini-card,
+.card-dark .eventbox,
+.card-dark .meta,
+.card-dark .stat,
+.card-dark .feature,
+.card-dark .editorial-quote,
+.card-dark .mini-quote,
+.card-dark .trust-card,
+.card-dark .list-card,
+.card-dark .booking-card,
+.card-dark .menu-stat,
+.card-dark .cta-panel,
+.card-dark .note-box,
+.card-dark .status-tile,
+.card-dark .meta-tile {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff2e5;
+  border-color: rgba(255, 213, 165, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: none;
+}
+.card-dark .divider {
+  background: linear-gradient(90deg, rgba(255, 213, 165, 0), rgba(255, 213, 165, 0.28), rgba(255, 213, 165, 0));
+}
+
+.card-sunset {
+  background:
+    radial-gradient(32rem 18rem at 0% 0%, rgba(255, 208, 94, 0.26), transparent 56%),
+    radial-gradient(30rem 20rem at 100% 0%, rgba(201, 59, 32, 0.15), transparent 56%),
+    linear-gradient(180deg, rgba(255, 245, 231, 0.96), rgba(255, 232, 213, 0.94));
+  border-color: rgba(132, 79, 57, 0.12);
+  box-shadow: 0 22px 56px rgba(84, 46, 28, 0.1);
+}
+.card-sunset .kicker,
+.card-sunset .chip,
+.card-sunset .trust-card,
+.card-sunset .list-card,
+.card-sunset .booking-card,
+.card-sunset .feature,
+.card-sunset .menu-stat,
+.card-sunset .cta-panel,
+.card-sunset .note-box {
+  background: rgba(255, 252, 248, 0.54);
+  border-color: rgba(123, 66, 44, 0.1);
+}
+
+.page-about .page-masthead,
+.page-contact .page-masthead {
+  background: linear-gradient(180deg, rgba(255, 248, 239, 0.97), rgba(255, 238, 223, 0.93));
+  border-color: rgba(123, 66, 44, 0.1);
+}
+.page-about .page-masthead .mini-quote,
+.page-contact .page-masthead .mini-quote {
+  background: rgba(255, 255, 255, 0.5);
+}
+.page-menu .page-masthead,
+.page-find .page-masthead {
+  background: radial-gradient(36rem 18rem at 100% 0%, rgba(255, 127, 58, 0.12), transparent 56%), linear-gradient(160deg, #1d100d 0%, #2b1511 56%, #3a1c16 100%);
+  border-color: rgba(255, 185, 120, 0.12);
+  box-shadow: 0 28px 72px rgba(35, 12, 8, 0.32);
+}
+.page-menu .page-masthead .mini-quote,
+.page-find .page-masthead .mini-quote {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff2e5;
+  border-color: rgba(255, 213, 165, 0.12);
+}
