@@ -49,9 +49,7 @@
   setText("brandName2", brand.name);
   if ($("brandSub")) {
     const city = brand.city || "Rochester, NY";
-    const tagline = brand.tagline || "";
-    const sub = `${city}${tagline ? ` • ${tagline}` : ""}`.trim();
-    setText("brandSub", sub);
+    setText("brandSub", city);
   }
   // Pills (optional)
   const pillCity = $("pillCity");
@@ -181,18 +179,39 @@
   // Nav active (auto)
   try {
     const path = (location.pathname || "/").replace(/\/index\.html$/, "/");
-    document.querySelectorAll(".nav a").forEach((a) => {
-      const href = a.getAttribute("href") || "";
-      const normalized = href === "/" ? "/" : href;
-      const isMatch = normalized === path;
-      if (isMatch) {
-        a.classList.add("active");
-        a.setAttribute("aria-current", "page");
-      } else {
-        a.classList.remove("active");
-        if (a.getAttribute("aria-current") === "page") a.removeAttribute("aria-current");
-      }
+    const hash = location.hash || "";
+    const links = Array.from(document.querySelectorAll(".nav a"));
+
+    links.forEach((a) => {
+      a.classList.remove("active");
+      if (a.getAttribute("aria-current") === "page") a.removeAttribute("aria-current");
     });
+
+    let active = null;
+
+    if (hash) {
+      const exactHref = `${path}${hash}`;
+      active = links.find((a) => (a.getAttribute("href") || "") === exactHref) || null;
+    }
+
+    if (!active) {
+      active =
+        links.find((a) => {
+          const href = a.getAttribute("href") || "";
+          return href.indexOf("#") === -1 && href === path;
+        }) ||
+        links.find((a) => {
+          const href = a.getAttribute("href") || "";
+          const hrefPath = (href.split("#")[0] || "/").replace(/\/index\.html$/, "/");
+          return hrefPath === path;
+        }) ||
+        null;
+    }
+
+    if (active) {
+      active.classList.add("active");
+      active.setAttribute("aria-current", "page");
+    }
   } catch (_) {}
 
   // Mobile nav toggle
